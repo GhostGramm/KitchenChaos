@@ -15,7 +15,7 @@ public class KitchenObject : MonoBehaviour
         if(this.kitchenObjectParent != null && this.kitchenObjectParent.IsKitchenObjectAvailable()) 
             this.kitchenObjectParent.ClearKitchenObject();
 
-
+        Debug.Log(_kitchenObjectParent);
         this.kitchenObjectParent = _kitchenObjectParent;
         this.kitchenObjectParent.SetKitchenObject(this);
         transform.parent = this.kitchenObjectParent.GetKitchenObjectFollowTransform();

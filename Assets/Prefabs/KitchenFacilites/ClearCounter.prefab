@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 8411146180111202795, guid: 32309bd9669b96d4aa1b4b8f03570af6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8411146180111202795, guid: 32309bd9669b96d4aa1b4b8f03570af6,
         type: 3}
@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 8411146180111202795, guid: 32309bd9669b96d4aa1b4b8f03570af6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.09
       objectReference: {fileID: 0}
     - target: {fileID: 8411146180111202795, guid: 32309bd9669b96d4aa1b4b8f03570af6,
         type: 3}
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kitchenObjectSO: {fileID: 11400000, guid: c6901ca1c84bce44b9a7b62fe68fed27, type: 2}
   counterTopPoint: {fileID: 2045622270700479578}
+  kitchenObject: {fileID: 0}
 --- !u!4 &2045622270700479578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3065232510871534376, guid: 32309bd9669b96d4aa1b4b8f03570af6,
@@ -223,12 +224,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1319945292888054776, guid: 0004cb1e11ad014419b943c7da960724,
         type: 3}
+      propertyPath: baseCounter
+      value: 
+      objectReference: {fileID: 888306567032417447}
+    - target: {fileID: 1319945292888054776, guid: 0004cb1e11ad014419b943c7da960724,
+        type: 3}
       propertyPath: clearCounter
       value: 
       objectReference: {fileID: 888306567032417447}
     - target: {fileID: 1319945292888054776, guid: 0004cb1e11ad014419b943c7da960724,
         type: 3}
       propertyPath: selectedVisual
+      value: 
+      objectReference: {fileID: 62382255616843996}
+    - target: {fileID: 1319945292888054776, guid: 0004cb1e11ad014419b943c7da960724,
+        type: 3}
+      propertyPath: selectedVisual.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319945292888054776, guid: 0004cb1e11ad014419b943c7da960724,
+        type: 3}
+      propertyPath: selectedVisual.Array.data[0]
       value: 
       objectReference: {fileID: 62382255616843996}
     - target: {fileID: 4589716710238282922, guid: 0004cb1e11ad014419b943c7da960724,

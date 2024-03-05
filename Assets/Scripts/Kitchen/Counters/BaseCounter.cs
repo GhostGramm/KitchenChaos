@@ -9,7 +9,7 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
 
     public virtual void Interact(IKitchenObjectParent objectParent)
     {
-        if (kitchenObject == null)
+        if (!IsKitchenObjectAvailable())
         {
             GameObject kitchenObjGB = Instantiate(kitchenObjectSO.prefab);
             KitchenObject kObj = kitchenObjGB.GetComponent<KitchenObject>();

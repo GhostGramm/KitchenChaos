@@ -5,7 +5,7 @@ using UnityEngine;
 public class CounterSelectVisual : MonoBehaviour
 {
     [SerializeField] private BaseCounter baseCounter;
-    [SerializeField] private GameObject selectedVisual;
+    [SerializeField] private GameObject[] selectedVisual;
 
     private void Start()
     {
@@ -14,12 +14,24 @@ public class CounterSelectVisual : MonoBehaviour
 
     private void ToggleSelectedState(BaseCounter _counter)
     {
-        if(baseCounter != _counter)
+        if (baseCounter != _counter)
             Hide();
         else
             Show();
     }
 
-    private void Show() => selectedVisual.SetActive(true);
-    private void Hide() => selectedVisual.SetActive(false);
+    private void Show()
+    {
+        foreach (GameObject item in selectedVisual)
+        {
+            item.SetActive(true);
+        }
+    }
+    private void Hide()
+    {
+        foreach (GameObject item in selectedVisual)
+        {
+            item.SetActive(false);
+        }
+    }
 }
